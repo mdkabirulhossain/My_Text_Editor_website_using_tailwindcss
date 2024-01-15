@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+<body>
+    <header>
+     <p class="text-5xl text-center mt-8">Welcome To My<span class="text-sky-700"> Text Editor</span></p>
+    </header>
+    <main>
+    <section class="mt-5 w-1/2 mx-auto bg-slate-400">
+     <!-- Icon parent Dive -->
+    <div class="flex justify-between">
+        <div>
+            <button id="bold-btn"><i class="fa-solid fa-bold mx-3 my-2"></i></button>
+            <button id="italic-btn"><i class="fa-solid fa-italic mx-3 my-2"></i></button>
+            <button id="underline-btn"><i class="fa-solid fa-underline mx-3 my-2"></i></button>
+        </div>
+        <div>
+            <button id="align_left"><i class="fa-solid fa-align-left mx-3 my-2"></i></button>
+            <button id="align_center"><i class="fa-solid fa-align-center mx-3 my-2"></i></button>
+            <button id="align_right"><i class="fa-solid fa-align-right mx-3 my-2"></i></button>
+        </div>
+        <div>
+            <p class="m-2 inline">Font Size: </p>
+            <input type="number" class="m-2 w-1/12" name="" id="font_size">
+            <input type="color" class="p-1" name="" id="color_field">
+            <button id="color_apply" class="p-2 m-2 rounded bg-orange-500 text-white">Apply</button>
+        </div>
+        
+    </div>
+    
+    <div class="p-4">
+        <textarea class=" w-full p-2" name="" id="text_area" cols="95" rows="10"></textarea>
+    </div>
+    </section>
+    </main>
+    
+    <script src="js/function.js"></script>
+</body>
+</html>
